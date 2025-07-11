@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* About Us Page */
+        .album-loop {
+            min-width: 100%;
+            min-height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /* Album Infinite Loop */
+        .tag-list {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-shrink: 0;
+            flex-direction: column;
+            gap: 0.75rem 0;
+            position: relative;
+            padding: 0.5rem 0;
+            overflow: hidden;
+        }
+
+        .loop-slider {
+            .inner {
+                display: flex;
+                width: fit-content;
+                animation-name: loop;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: var(--direction);
+                animation-duration: var(--duration);
+            }
+        }
+
+        .tag {
+            display: flex;
+            align-items: center;
+            gap: 0 0.2rem;
+            color: #e2e8f0;
+            font-size: 0.9rem;
+            background-color: #334155;
+            border-radius: 0.4rem;
+            padding: 0.7rem 1rem;
+            margin-right: 1rem;
+            /* Use margin-right for smooth loop */
+            box-shadow:
+                0 0.1rem 0.2rem rgba(0, 0, 0, 0.2),
+                0 0.1rem 0.5rem rgba(0, 0, 0, 0.3),
+                0 0.2rem 1.5rem rgba(0, 0, 0, 0.4);
+
+            img {
+                font-size: 1.2rem;
+                color: #64748b;
+            }
+        }
+
+        .fade {
+            pointer-events: none;
+            background: linear-gradient(90deg, #000015, transparent 30%, transparent 70%, #000015);
+            position: absolute;
+            inset: 0;
+        }
+
+        @keyframes loop {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#000015] text-white font-sans">
+    <div class="event p-0">
+        <section>
+            <!-- Albums Infinite Loop -->
+            <div class="album-loop">
+                <div class="tag-list">
+                    <div class="loop-slider" style="--duration:15951ms; --direction:normal;">
+                        <div class="inner gap-3">
+                            <img src="assets/art-01.jpg" alt="Art01" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-02.jpg" alt="Art02" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-03.jpg" alt="Art03" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-04.jpg" alt="Art04" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-05.jpg" alt="Art05" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-06.jpg" alt="Art06" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-07.jpg" alt="Art07" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-08.jpg" alt="Art08" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-09.jpg" alt="Art09" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-10.jpg" alt="Art10" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-11.jpg" alt="Art11" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-12.jpg" alt="Art12" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-13.jpg" alt="Art13" class="w-32 h-32 mx-auto opacity-20">
+                        </div>
+                    </div>
+                    <div class="loop-slider" style="--duration:12951ms; --direction:reverse;">
+                        <div class="inner gap-3">
+                            <img src="assets/art-01.jpg" alt="Art01" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-02.jpg" alt="Art02" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-03.jpg" alt="Art03" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-04.jpg" alt="Art04" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-05.jpg" alt="Art05" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-06.jpg" alt="Art06" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-07.jpg" alt="Art07" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-08.jpg" alt="Art08" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-09.jpg" alt="Art09" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-10.jpg" alt="Art10" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-11.jpg" alt="Art11" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-12.jpg" alt="Art12" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-13.jpg" alt="Art13" class="w-32 h-32 mx-auto opacity-20">
+                        </div>
+                    </div>
+                    <div class="loop-slider" style="--duration:15951ms; --direction:normal;">
+                        <div class="inner gap-3">
+                            <img src="assets/art-01.jpg" alt="Art01" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-02.jpg" alt="Art02" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-03.jpg" alt="Art03" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-04.jpg" alt="Art04" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-05.jpg" alt="Art05" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-06.jpg" alt="Art06" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-07.jpg" alt="Art07" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-08.jpg" alt="Art08" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-09.jpg" alt="Art09" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-10.jpg" alt="Art10" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-11.jpg" alt="Art11" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-12.jpg" alt="Art12" class="w-32 h-32 mx-auto opacity-20">
+                            <img src="assets/art-13.jpg" alt="Art13" class="w-32 h-32 mx-auto opacity-20">
+                        </div>
+                    </div>
+                    <div class="fade"></div>
+                </div>
+                <!-- End of Albums Infinite Loop -->
+
+
+                <!-- Embedded Music Player -->
+                <div class="flex justify-center relative h-screen mt-[-400px]">
+                    <div style="width: 280px">
+                        <iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/6QnfsyzifAJJrNHYTO6j9J?utm_source=generator&theme=0"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+                <!-- End of Embedded Music Player -->
+            </div>
+            <!-- End of Albums Infinite Loop -->
+        </section>
+
+
+    </div>
+</body>
+
+</html>
