@@ -2,36 +2,42 @@
 
 :root {
     background-color: rgba(0, 0, 21, 1);
-
 }
 
 /*Extra Large screens - Extra large desktops*/
+
+/*Header*/
 .header {}
 
 .header-large-screen {
     display: flex !important;
     justify-content: space-evenly !important;
     color: #ff8272;
-    font-size: 13px !important;
+    font-size: 12px !important;
+    z-index: 999;
 }
 
 .custom-menu:hover {
     background-color: #ff8272 !important;
     color: white !important;
     transition: background-color 0.3s ease;
-    transform: scale(1.05)
+    transform: scale(1.1);
+    z-index: 999;
 }
 
 #navDemo {
     background-color: #000015;
+    z-index: 999;
 }
 
 #navDemo a {
     font-size: 13px !important;
     color: #ff8272;
+    z-index: 999;
 }
 
-.hero {
+/*About*/
+.about {
     height: 650px;
     background-image: url('assets/about-me.jpg');
     background-repeat: no-repeat;
@@ -40,14 +46,14 @@
     background-color: #000015;
 }
 
-.hero-description {
+.about-description {
     height: 650px;
     background-color: rgba(0, 0, 21, .01);
     display: flex;
     font-size: 15px;
 }
 
-.hero-text {
+.about-text {
     width: 70% !important;
     margin: auto !important;
     display: flex;
@@ -61,14 +67,12 @@
     font-size: 18px;
 }
 
-
-.hero-text p {
+.about-text p {
     color: white;
     width: 50%;
 }
 
-.hero-title {
-    /* padding-top:80px; */
+.about-title {
     font-weight: 800;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
@@ -125,32 +129,32 @@ main {
     margin: 20px 0px;
     text-align: center;
     text-transform: uppercase;
-
 }
 
-.store {
+/*Experience*/
+.experience {
     margin-top: 30px;
 }
 
-.game-store {
+.expi {
     margin-top: 20px !important;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.game-image {
+.expi-image {
     width: 280px;
     height: 240px;
 }
 
-.game-image img {
+.expi-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.game-store-list {
+.expi-list {
     width: 280px;
     height: 360px;
     margin: 20px;
@@ -175,6 +179,7 @@ main {
 .work-link:hover {
     color: white;
     text-decoration: underline;
+    font-size: 8.5px;
 }
 
 h3 {
@@ -183,13 +188,14 @@ h3 {
     font-size: 17px;
 }
 
-.store-text-description {
+.expi-description {
     padding-left: 20px;
     display: flex;
     font-size: 10px;
     flex-direction: column;
 }
 
+/*Research*/
 h4 {
     color: #ff8272;
     font-weight: 700;
@@ -213,10 +219,9 @@ h4 {
     margin: 10px;
     overflow: hidden;
     border-top: none;
-
-
     border-bottom: 1px solid white;
     color: white;
+    transform: translateZ(0);
 }
 
 .thesis-list:hover {
@@ -237,7 +242,6 @@ h4 {
     display: block;
 }
 
-/* Shared overlay styles */
 .overlay {
     position: absolute;
     top: 0;
@@ -250,7 +254,6 @@ h4 {
     transition: opacity 0.4s ease;
 }
 
-/* Initial pink gradient */
 .overlay.initial {
     background: linear-gradient(to top, rgba(0, 0, 21, 1) 10%, rgba(255, 130, 170, 0) 100%);
     display: flex;
@@ -259,7 +262,6 @@ h4 {
     z-index: 1;
 }
 
-/* White overlay that appears on hover */
 .overlay.hover-detail {
     background-color: rgba(0, 0, 21, 0.7);
     color: white;
@@ -271,7 +273,6 @@ h4 {
     z-index: 2;
 }
 
-/* Show detailed overlay on hover */
 .thesis-image:hover .overlay.initial {
     opacity: 0;
 }
@@ -297,7 +298,7 @@ h4 {
     color: white;
 }
 
-
+/*Contact*/
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -305,7 +306,6 @@ h4 {
 }
 
 .contact-list {
-    margin-top: 15px !important;
     color: rgba(0, 0, 21, 1);
 }
 
@@ -335,8 +335,6 @@ span {
 
 
 
-
-
 /*General CSS and CSS reset*/
 
 html {
@@ -361,17 +359,17 @@ html {
 /*MEDIA QUERIES*/
 /*Large screens - Desktop*/
 @media screen and (max-width: 1500px) {
-    .hero {
+    .about {
         height: 550px !important;
         ;
         background-image: url('assets/about-me.jpg');
     }
 
-    .hero-description {
+    .about-description {
         height: 550px
     }
 
-    .hero-title {
+    .about-title {
         font-size: 90px;
     }
 }
@@ -394,65 +392,28 @@ html {
         font-size: 14px;
     }
 
-    .hero {
+    .about {
         height: 400px !important;
         background-image: url('assets/about-me.jpg');
     }
 
-    .hero-description {
+    .about-description {
         height: 400px;
         background-color: rgba(0, 0, 21, .3);
-
-
     }
 
-    .hero-title {
+    .about-title {
         font-size: 35px;
-        ;
-
     }
 
-    .hero-text p {
+    .about-text p {
         width: 80%;
-        ;
         font-size: 13px;
     }
 
     .title {
         text-align: center;
         font-size: 30px;
-    }
-
-    .event-text {
-        width: 80%;
-        color: blueviolet;
-
-    }
-
-    .event-text p {
-        font-size: 13px;
-    }
-
-    .event-title {
-        font-size: 30px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-
-    .event-hero {
-        width: 80%;
-        margin: auto;
-    }
-
-    .event-image {
-        width: 250px;
-        height: 400px;
-    }
-
-    .event-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .contact-list {
@@ -465,7 +426,6 @@ html {
 
     .contact-list p {
         font-size: 14px;
-
     }
 
     h5 {
@@ -480,26 +440,23 @@ html {
         display: block !important;
     }
 
-    .hero {
+    .about {
         height: 450px !important;
         background-image: url('assets/about-me.jpg');
     }
 
-    .hero-description {
+    .about-description {
         height: 450px;
         background-color: rgba(0, 0, 21, .3);
-
     }
 
-    .hero-title {
+    .about-title {
         font-size: 30px;
-        ;
         padding-top: 70px;
     }
 
-    .hero-text p {
+    .about-text p {
         width: 100%;
-        ;
         font-size: 13px;
     }
 
@@ -508,43 +465,8 @@ html {
         font-size: 25px;
     }
 
-    .event-text {
-        width: 100%;
-        color: blueviolet;
-
-    }
-
-    .event-text p {
-        font-size: 13px;
-    }
-
-    .event-title {
-        font-size: 30px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-
-    .event-hero {
-        width: 90%;
-        margin: auto;
-    }
-
-    .event-image {
-        width: 250px;
-        height: 400px;
-    }
-
-    .event-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
     .contact-list {
         width: 300px;
-        padding: 25px;
-        border: 1px solid rgba(49, 45, 45, 0.5);
-        border-radius: 10px;
     }
 
     .contact-list p {
