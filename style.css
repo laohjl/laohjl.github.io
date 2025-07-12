@@ -429,7 +429,7 @@ html {
     }
 
     h5 {
-        font-size: 17px;
+        font-size: 15px;
     }
 
 }
@@ -470,11 +470,11 @@ html {
     }
 
     .contact-list p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     h5 {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .badge {}
