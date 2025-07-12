@@ -11,13 +11,13 @@
 .header-large-screen {
     display: flex !important;
     justify-content: space-evenly !important;
-    color: rgb(255, 0, 140);
+    color: #ff8272;
     font-size: 13px !important;
 
 }
 
 .custom-menu:hover {
-    background-color: rgb(255, 0, 140) !important;
+    background-color: #ff8272 !important;
     color: white !important;
     transition: background-color 0.3s ease;
     transform: scale(1.05)
@@ -30,7 +30,7 @@
 
 #navDemo a {
     font-size: 13px !important;
-    color: rgb(255, 0, 140);
+    color: #ff8272;
 }
 
 .hero {
@@ -48,6 +48,7 @@
     height: 650px;
     background-color: rgba(0, 0, 21, .3);
     display: flex;
+    font-size: 15px;
 }
 
 .hero-text {
@@ -55,7 +56,7 @@
     margin: auto !important;
     display: flex;
     flex-direction: column;
-
+    font-size: 15px;
 }
 
 .highlight-name {
@@ -87,7 +88,7 @@
 .icons {
     font-size: 30px;
     letter-spacing: 5px;
-    color: rgb(255, 0, 140);
+    color: #ff8272;
 }
 
 .icons:hover {
@@ -97,9 +98,9 @@
 }
 
 .custom-button {
-    background-color: rgb(255, 0, 140);
+    background-color: #ff8272;
     color: white;
-    border: 1px solid rgb(255, 0, 140);
+    border: 1px solid #ff8272;
     padding: 6px 6px;
     width: 160px;
     border-radius: 0;
@@ -109,8 +110,8 @@
 
 .custom-button:hover {
     background-color: white;
-    color: rgb(255, 0, 140);
-    border-color: rgb(255, 0, 140);
+    color: #ff8272;
+    border-color: #ff8272;
     transform: scale(0.95);
 }
 
@@ -171,7 +172,7 @@ main {
 }
 
 .work-link {
-    color: rgb(255, 0, 140);
+    color: #ff8272;
     text-decoration: none;
     font-style: italic;
     font-size: 9px;
@@ -185,7 +186,7 @@ main {
 h4 {
     color: white;
     font-weight: 700;
-    font-size: 17px !important;
+    font-size: 17px;
 }
 
 .store-text-description {
@@ -250,11 +251,12 @@ h3 {
 
 .contact-list {
     margin-top: 15px !important;
-    color: white;
+    color: rgba(0, 0, 21, 1);
 }
 
 h5 {
-    color: white;
+    color: rgba(0, 0, 21);
+    font-size: 15px;
 }
 
 span {
@@ -263,9 +265,13 @@ span {
 
 .contact-list p {}
 
+.contact i {
+    color: rgba(0, 0, 21, 1) !important;
+}
+
 .email-contact {
     width: 80%;
-    color: gray;
+    color: rgba(0, 0, 21, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
