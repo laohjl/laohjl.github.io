@@ -14,11 +14,10 @@
 </head>
 
 <body>
-    <header style="position: relative;">
+    <!--     <header style="position: relative;">
 
         <div class="w3-top" class="header" id="home">
 
-            <!-- Navbar default-->
             <div class=" header-large-screen" style="background-color: rgba(0, 0, 21, 0.5);">
                 <div>
                     <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large custom-menu">ABOUT</a>
@@ -33,6 +32,42 @@
 
             </div>
 
+            <div id="navDemo" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+                <a href="#experience" class="w3-bar-item w3-button w3-padding-large"
+                    onclick="myFunction()">EXPERIENCE</a>
+                <a href="#research" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH</a>
+                <a href="#hobby" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOBBY</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+            </div>
+        </div>
+    </header> -->
+
+
+    <header style="position: relative;">
+
+
+        <div class="w3-top" class="header" id="home">
+            <div class="w3-bar  w3-card w3-left-align w3-large header-large-screen"
+                style="background-color: rgba(30, 0, 0, 0.5);">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large custom-menu w3-large "
+                    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <div>
+                    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large custom-menu">ABOUT</a>
+                    <a href="#experience" class="w3-bar-item w3-button w3-hide-small w3-padding-large custom-menu">
+                        EXPERIENCE</a>
+                    <a href="#research"
+                        class="w3-bar-item w3-button w3-hide-small w3-padding-large custom-menu">RESEARCH</a>
+                    <a href="#hobby" class="w3-bar-item w3-button w3-hide-small w3-padding-large custom-menu">HOBBY</a>
+                    <a href="#contact"
+                        class="w3-bar-item w3-button w3-hide-small w3-padding-large custom-menu">CONTACT</a>
+                </div>
+
+
+            </div>
+
+
             <!-- Navbar on small screens -->
             <div id="navDemo" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-large">
                 <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
@@ -44,6 +79,7 @@
             </div>
         </div>
     </header>
+
 
     <section>
         <!-- About -->
