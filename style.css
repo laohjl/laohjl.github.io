@@ -133,11 +133,11 @@ main {
 
 /*Experience*/
 .experience {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .expi {
-    margin-top: 20px !important;
+    margin-top: 0px !important;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -145,7 +145,7 @@ main {
 
 .expi-image {
     width: 280px;
-    height: 240px;
+    height: 260px;
 }
 
 .expi-image img {
@@ -156,8 +156,8 @@ main {
 
 .expi-list {
     width: 280px;
-    height: 360px;
-    margin: 20px;
+    height: 380px;
+    margin: 0px;
     overflow: hidden;
     border-top: none;
 
@@ -207,7 +207,7 @@ h4 {
 }
 
 .thesis {
-    margin-top: 10px !important;
+    margin-top: 0px !important;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -216,7 +216,8 @@ h4 {
 .thesis-list {
     width: 360px;
     height: 180px;
-    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     overflow: hidden;
     border-top: none;
 
